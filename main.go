@@ -46,7 +46,7 @@ func main() {
 		config.Consumer.Station,
 		config.Consumer.Consumer,
 	)
-	log.Fatal(msgErr)
+	logFatalErr(msgErr)
 	w := &watcher.Watcher{
 		Controller:             models.NewController(&controllerOpts),
 		SensorRegistryConsumer: srCons,
