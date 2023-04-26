@@ -2,6 +2,8 @@
 
 [![Build](https://github.com/hidromatologia-v2/alerts/actions/workflows/build.yaml/badge.svg)](https://github.com/hidromatologia-v2/alerts/actions/workflows/build.yaml)
 [![codecov](https://codecov.io/gh/hidromatologia-v2/alerts/branch/main/graph/badge.svg?token=KUQFMZ4IR2)](https://codecov.io/gh/hidromatologia-v2/alerts)
+[![Go Report Card](https://goreportcard.com/badge/github.com/hidromatologia-v2/alerts)](https://goreportcard.com/report/github.com/hidromatologia-v2/alerts)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/hidromatologia-v2/alerts)
 
 ## Docker
 
