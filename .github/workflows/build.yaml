@@ -71,13 +71,13 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Linux binary
-        run: go build -v -o bin/messages
+        run: go build -v -o bin/alerts
         env:
           GOOS: linux
           GOARCH: amd64
 
       - name: Windows binary
-        run: go build -v -o bin/messages.exe
+        run: go build -v -o bin/alerts.exe
         env:
           GOOS: windows
           GOARCH: amd64
@@ -89,8 +89,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            bin/messages
-            bin/messages.exe
+            bin/alerts
+            bin/alerts.exe
           tag_name: v${{needs.versioning.outputs.version}}
 
   release-docker:
