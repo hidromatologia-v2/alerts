@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 
+	"github.com/hidromatologia-v2/models"
 	"github.com/hidromatologia-v2/models/common/postgres"
 	"github.com/hidromatologia-v2/models/tables"
 	"github.com/memphisdev/memphis.go"
@@ -75,14 +76,15 @@ func main() {
 				log.Fatal(pErr)
 			}
 			defer prod.Destroy()
-			db := postgres.NewDefault()
+			c := models.NewController(&models.Options{Database: postgres.NewDefault()})
+			defer c.Close()
 			u := tables.RandomUser()
-			uErr := db.Create(u).Error
+			uErr := c.DB.Create(u).Error
 			if uErr != nil {
 				log.Fatal(uErr)
 			}
 			s := tables.RandomStation(u)
-			sErr := db.Create(s).Error
+			sErr := c.DB.Create(s).Error
 			if sErr != nil {
 				log.Fatal(sErr)
 			}
@@ -91,7 +93,7 @@ func main() {
 			*a.Condition = tables.Ge
 			*a.Value = 10
 			a.Enabled = &tables.True
-			aErr := db.Create(a).Error
+			aErr := c.DB.Create(a).Error
 			if aErr != nil {
 				log.Fatal(aErr)
 			}
