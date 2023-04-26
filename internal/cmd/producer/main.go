@@ -50,7 +50,7 @@ func main() {
 			},
 			&cli.StringFlag{
 				Name:  "producer",
-				Value: "alerts",
+				Value: "alerts-producer",
 				Usage: "Memphis producer name",
 			},
 		},
