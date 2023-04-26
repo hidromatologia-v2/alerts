@@ -11,6 +11,13 @@ networks:
       driver: default
 
 services:
+  messages:
+    networks:
+      - server
+      - memphis
+    container_name: server-messages
+    restart: unless-stopped
+    image: ghcr.io/hidromatologia-v2/messages:latest
   alerts:
     networks:
       - server
