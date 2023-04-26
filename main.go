@@ -43,8 +43,8 @@ func main() {
 	)
 	logFatalErr(srErr)
 	msgProd, msgErr := conn.CreateProducer(
-		config.Consumer.Station,
-		config.Consumer.Consumer,
+		config.Producer.Station,
+		config.Producer.Producer,
 	)
 	logFatalErr(msgErr)
 	w := &watcher.Watcher{
