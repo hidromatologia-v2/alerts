@@ -15,8 +15,8 @@ import (
 
 func main() {
 	app := &cli.App{
-		Name:  "messaging",
-		Usage: "messaging microservice for the ResupplyOrg project",
+		Name:  "alerts",
+		Usage: "alerts microservice for the ResupplyOrg project",
 		Flags: []cli.Flag{
 			&cli.StringFlag{
 				Name:  "host",
