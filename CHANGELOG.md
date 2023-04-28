@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.4 (2023-04-28)
+
+
+### Bug Fixes
+
+* renamed typo ([54696de](https://github.com/hidromatologia-v2/alerts/commit/54696de0d236198c5a547a19d4943d989e210de4))
+
 ### 0.0.3 (2023-04-28)
 
 
