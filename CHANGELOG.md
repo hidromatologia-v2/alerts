@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.3 (2023-04-28)
+
+
+### Bug Fixes
+
+* separated producer env variables ([7098b32](https://github.com/hidromatologia-v2/alerts/commit/7098b329b252882ed5b31bab7e271bc0d72db1d2))
+
 ### 0.0.2 (2023-04-26)
 
 ### 0.0.1 (2023-04-26)
