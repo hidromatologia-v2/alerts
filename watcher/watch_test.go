@@ -8,6 +8,7 @@ import (
 	"bytes"
 
 	"github.com/hidromatologia-v2/models/common/connection"
+	"github.com/hidromatologia-v2/models/common/random"
 	"github.com/hidromatologia-v2/models/tables"
 	"github.com/stretchr/testify/assert"
 )
@@ -54,7 +55,7 @@ func TestWatcher(t *testing.T) {
 	w := &Watcher{
 		Controller:             connection.PostgresController(),
 		SensorRegistryConsumer: connection.DefaultConsumer(t),
-		MessageProducer:        connection.NewProducer(t, "messages"),
+		MessageProducer:        connection.NewProducer(t, "messages", random.String()[:64]),
 	}
 	go w.Run()
 	defer w.Close()
