@@ -8,6 +8,17 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/hidromatologia-v2/alerts)](https://goreportcard.com/report/github.com/hidromatologia-v2/alerts)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/hidromatologia-v2/alerts)
 
+## Documentation
+
+| Document                                                     | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Database.md](https://github.com/hidromatologia-v2/docs/blob/main/Database.md) | Database entity relationship diagrams                        |
+| [CICD.md](CICD.md)                                           | Documentation about the CI/CD pipelines implemented in the project. |
+| [CONTRIBUTING.md](CONTRIBUTING.md)                           | Contribution manual.                                         |
+| [Use cases.md](Use%20cases.md)                               | System use cases                                             |
+| [microservices.drawio](microservices.drawio)                 | Infrastructure diagram                                       |
+| [diagrams.mdj](diagrams.mdj)                                 | Use case, packages and deployment diagrams in **StarUML**.   |
+
 ## Docker
 
 ```shell
