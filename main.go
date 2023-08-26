@@ -8,6 +8,7 @@ import (
 	"github.com/hidromatologia-v2/models"
 	"github.com/hidromatologia-v2/models/common/postgres"
 	"github.com/memphisdev/memphis.go"
+	uuid "github.com/satori/go.uuid"
 	"github.com/sethvargo/go-envconfig"
 )
 
@@ -33,7 +34,7 @@ func newConsumer(config *Config) *memphis.Consumer {
 	logFatalErr(connErr)
 	consumer, consumerErr := conn.CreateConsumer(
 		config.Consumer.Station,
-		config.Consumer.Consumer,
+		config.Consumer.Consumer+uuid.NewV4().String(),
 	)
 	logFatalErr(consumerErr)
 	return consumer
@@ -55,7 +56,7 @@ func newProducer(config *Config) *memphis.Producer {
 	logFatalErr(connErr)
 	producer, producerErr := conn.CreateProducer(
 		config.Producer.Station,
-		config.Producer.Producer,
+		config.Producer.Producer+uuid.NewV4().String(),
 	)
 	logFatalErr(producerErr)
 	return producer
