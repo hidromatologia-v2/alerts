@@ -1,6 +1,9 @@
 # alerts
 
-[![Build](https://github.com/hidromatologia-v2/alerts/actions/workflows/build.yaml/badge.svg)](https://github.com/hidromatologia-v2/alerts/actions/workflows/build.yaml)
+[![Coverage](https://github.com/hidromatologia-v2/alerts/actions/workflows/codecov.yaml/badge.svg)](https://github.com/hidromatologia-v2/alerts/actions/workflows/codecov.yaml)
+[![Release](https://github.com/hidromatologia-v2/alerts/actions/workflows/release.yaml/badge.svg)](https://github.com/hidromatologia-v2/alerts/actions/workflows/release.yaml)
+[![Tagging](https://github.com/hidromatologia-v2/alerts/actions/workflows/tagging.yaml/badge.svg)](https://github.com/hidromatologia-v2/alerts/actions/workflows/tagging.yaml)
+[![Test](https://github.com/hidromatologia-v2/alerts/actions/workflows/testing.yaml/badge.svg)](https://github.com/hidromatologia-v2/alerts/actions/workflows/testing.yaml)
 [![codecov](https://codecov.io/gh/hidromatologia-v2/alerts/branch/main/graph/badge.svg?token=KUQFMZ4IR2)](https://codecov.io/gh/hidromatologia-v2/alerts)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hidromatologia-v2/alerts)](https://goreportcard.com/report/github.com/hidromatologia-v2/alerts)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/hidromatologia-v2/alerts)
